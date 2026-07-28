@@ -1,0 +1,63 @@
+{
+    "name": "koh/sylius-agent-ready",
+    "description": "Metapackage pulling in the full koh agent-readiness surface for Sylius: discovery documents, llms.txt, agent authentication and the agentic commerce protocols.",
+    "type": "metapackage",
+    "license": "MIT",
+    "keywords": [
+        "sylius",
+        "agent",
+        "ai",
+        "discovery",
+        "agentic-commerce",
+        "llms.txt",
+        "mcp",
+        "acp",
+        "ucp",
+        "x402",
+        "mpp"
+    ],
+    "authors": [
+        {
+            "name": "Kai Ole Hartwig",
+            "email": "mail@ole-hartwig.eu"
+        }
+    ],
+    "homepage": "https://ole-hartwig.eu/open-source/sylius-agent-ready",
+    "support": {
+        "issues": "https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/-/issues",
+        "source": "https://github.com/ole-hartwig/sylius-agent-ready"
+    },
+    "require": {
+        "php": "^8.2",
+        "koh/sylius-a2a": "^1.0",
+        "koh/sylius-acp": "^1.0",
+        "koh/sylius-agent-contracts": "^1.1",
+        "koh/sylius-agent-skills": "^1.0",
+        "koh/sylius-api-catalog": "^1.0",
+        "koh/sylius-auth-md": "^1.0",
+        "koh/sylius-llms-txt": "^1.0",
+        "koh/sylius-markdown": "^1.0",
+        "koh/sylius-mcp-oauth": "^1.0",
+        "koh/sylius-mpp": "^1.0",
+        "koh/sylius-robots-txt": "^1.0",
+        "koh/sylius-web-bot-auth": "^1.0",
+        "koh/sylius-x402": "^1.0",
+        "stefandoorn/sitemap-plugin": "^3.0"
+    },
+    "suggest": {
+        "koh/sylius-mcp": "MCP tools and the SEP-1649 server card.",
+        "koh/sylius-webmcp": "Exposes shop actions to in-browser agents.",
+        "koh/sylius-ucp": "Universal Commerce Protocol discovery profile."
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://git.ole-hartwig.eu/api/v4/group/1091/-/packages/composer/packages.json",
+            "only": [
+                "koh/*"
+            ]
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
