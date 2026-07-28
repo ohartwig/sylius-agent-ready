@@ -1,3 +1,14 @@
+## [1.1.0](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.0.0...v1.1.0) (2026-07-28)
+
+### :sparkles: Features
+
+* declare licensing for config files via REUSE.toml ([409da7a](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/409da7a41cc0ef6a8125e92be0dc273e5a7d8b4d))
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.25.0 ([57f1b8d](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/57f1b8d93354518b08f5022a40ac8aa26fb8000c))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.25.1 ([9a1f041](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/9a1f0413cd465792004c815f453a94618074fbea))
+
 ## 1.0.0 (2026-07-28)
 
 ### :sparkles: Features
