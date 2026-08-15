@@ -1,3 +1,19 @@
+## [1.1.3](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.2...v1.1.3) (2026-08-15)
+
+### :repeat: Continuous Integrations
+
+* follow the composed pipeline on [@1](https://git.ole-hartwig.eu/1) instead of an exact pin ([dee0c59](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/dee0c593188152c6343a5b6b5169d64e5f50f038))
+
+### :repeat: Chores
+
+* **ci:** enrol the Renovate bot's signing key ([b5d780f](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/b5d780f88a29af32b318027f1c8bb2393199aec1))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.10 ([c67f58c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/c67f58cd530308c8a26edd04ab3133f25e79c749))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.12 ([8d17223](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/8d17223d1dd5d7c9f557e4ee98909b9913db9b20))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.5 ([aea0f71](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/aea0f713cb18a98a282327a6acd71b5b0ddb2233))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.6 ([419180b](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/419180b091530d84e5e095a709a88455d75b9171))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.8 ([2935334](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/29353342b595299aee2bcbdd9292788a322a7a23))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v1.36.9 ([237b75c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/237b75cb24e1d803a3381795e273d782afd07f44))
+
 ## [1.1.2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.1...v1.1.2) (2026-08-03)
 
 ### :repeat: Chores
