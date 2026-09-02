@@ -28,7 +28,7 @@
         "source": "https://github.com/ole-hartwig/sylius-agent-ready"
     },
     "require": {
-        "php": "^8.5.9",
+        "php": "^8.5.10",
         "koh/sylius-a2a": "^1.0",
         "koh/sylius-acp": "^1.0",
         "koh/sylius-agent-contracts": "^1.1",
