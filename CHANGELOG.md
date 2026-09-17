@@ -1,3 +1,17 @@
+## [1.1.8](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.7...v1.1.8) (2026-09-17)
+
+### :bug: Fixes
+
+* **deps:** update dependency stefandoorn/sitemap-plugin to ^3.0.0 ([742cb38](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/742cb387d994171716ece94ab5d119b03a9c28a3))
+
+### :repeat: Continuous Integrations
+
+* release with yasrt ([c327c6e](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/c327c6ea91e8517012d03499bddcd3ead7dddb48))
+
+### :repeat: Chores
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2 ([f494449](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/f4944499e9ec7a51ca4a2f8f94c81946587d5aeb))
+
 ## [1.1.7](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.6...v1.1.7) (2026-09-02)
 
 ### :repeat: Chores
