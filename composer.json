@@ -42,7 +42,7 @@
         "koh/sylius-robots-txt": "^1.0",
         "koh/sylius-web-bot-auth": "^1.0",
         "koh/sylius-x402": "^1.0",
-        "stefandoorn/sitemap-plugin": "^3.0"
+        "stefandoorn/sitemap-plugin": "^3.0.0"
     },
     "suggest": {
         "koh/sylius-mcp": "MCP tools and the SEP-1649 server card.",
