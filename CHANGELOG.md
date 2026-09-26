@@ -1,3 +1,9 @@
+## [1.1.9](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.8...v1.1.9) (2026-09-26)
+
+### :bug: Fixes
+
+* **deps:** update dependency php to ^8.5.11 ([28dd993](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/28dd9938a5cd47b136f8192676f9a38c7f4ec3bc))
+
 ## [1.1.8](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.7...v1.1.8) (2026-09-17)
 
 ### :bug: Fixes
