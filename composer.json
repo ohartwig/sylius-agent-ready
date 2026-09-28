@@ -22,10 +22,10 @@
             "email": "mail@ole-hartwig.eu"
         }
     ],
-    "homepage": "https://ole-hartwig.eu/open-source/sylius-agent-ready",
+    "homepage": "https://github.com/ohartwig/sylius-agent-ready",
     "support": {
-        "issues": "https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/-/issues",
-        "source": "https://github.com/ole-hartwig/sylius-agent-ready"
+        "issues": "https://github.com/ohartwig/sylius-agent-ready/issues",
+        "source": "https://github.com/ohartwig/sylius-agent-ready"
     },
     "require": {
         "php": "^8.5.11",
