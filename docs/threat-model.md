@@ -89,17 +89,19 @@ or key provider the operator plugs in; sibling packages not listed above.
 | THR-AGENT-006 | B1 | Denial of service | Markdown requests force a full render per hit | Listener short-circuits before the controller; responses carry ETag and `max-age` |
 | THR-AGENT-007 | B1 | Spoofing | Authorization code intercepted and redeemed | PKCE S256 mandatory; codes single-use, 300 s TTL, bound to client and redirect URI; compared with `hash_equals` |
 | THR-AGENT-008 | B4 | Info disclosure | Database read exposes usable tokens or codes | Only SHA-256 hashes of tokens and codes are stored; raw value shown once |
-| THR-AGENT-009 | B1 | Tampering | CSRF on the consent form issues a code for the admin | Consent is `POST` with a CSRF token under the admin firewall |
+| THR-AGENT-009 | B1 | Tampering | CSRF or clickjacking on the consent form issues a code for the admin | Consent is `POST` with a CSRF token under the admin firewall; consent and error pages send `X-Frame-Options: DENY` and `frame-ancestors 'none'` (mcp-oauth v2.0.0) |
 | THR-AGENT-010 | B1 | Tampering | Open redirect via a bad `client_id` / `redirect_uri` | Mismatches render an on-site error and are never redirected to |
 | THR-AGENT-011 | B5 | Spoofing | Leaked `APP_SECRET` lets an attacker sign as the shop's bot | Web Bot Auth seed is a dedicated secret; `kid` is an RFC 7638 thumbprint, not configurable |
 | THR-AGENT-012 | B1 | Elevation | Paid resource reached without payment | x402 off by default; default verifier never grants access; `HEAD` gated with `GET` unless methods are listed |
 | THR-AGENT-013 | B2/B3 | Tampering | A channel **without a hostname** falls back to the request host even with `trust_request_host: false`; the result can be cached per channel | **Configuration requirement:** give every channel a hostname |
-| THR-AGENT-014 | B1 | Spoofing | Consent phishing: a client registered with an attacker-controlled HTTPS redirect URI obtains a code once an admin approves | Consent screen shows the client; **open — see findings** |
+| THR-AGENT-014 | B1 | Spoofing | Consent phishing: a client registered with an attacker-controlled HTTPS redirect URI obtains a code once an admin approves | `allowed_redirect_uris` enforced at registration and at `/authorize` (exact match; loopback port-agnostic per RFC 8252 §7.3; empty list allows nothing); consent screen shows client and redirect target. **Mitigated in mcp-oauth v2.0.0** |
 | THR-AGENT-015 | B1 | Repudiation | Agent actions not attributable | Every token is bound to an admin user and a client id; revocation endpoint |
 | THR-AGENT-016 | B1 | Denial of service | Mass client registration fills the client table | **Operator:** rate-limit `/mcp/oauth/register` at the proxy |
 | THR-AGENT-017 | B1 | Repudiation | Settlement failure after a paid response goes unnoticed | Settlement runs only on 2xx; failures are logged, never turned into an error for the payer |
 | THR-AGENT-018 | B6 | Elevation | A `PaymentBypassVoterInterface` implementation that trusts request data lets anyone skip payment | Voters run after the firewall; a voter must base its decision on the security token, not on headers |
 | THR-AGENT-019 | B1 | Tampering | 402 challenge echoes a `Host`-derived resource URL | Response is `no-store` and goes back only to the sender; accepted residual |
+| THR-AGENT-020 | B1 | Elevation | A leaked access token stays usable far longer than configured: OAuth tokens lived 90 days, CLI tokens never expired | OAuth tokens live `access_token_ttl` (default 3600 s); CLI tokens expire after 90 days unless `--no-expiry` is given explicitly. **Mitigated in mcp-oauth v2.0.0** |
+| THR-AGENT-021 | B1 | Denial of service | Consent template missing from the bundle: a fresh install fails at `/authorize`, and hosts write their own form without the CSRF field | Bundled, overridable consent template with CSRF field; translatable strings (`koh_mcp_oauth` domain). **Mitigated in mcp-oauth v2.0.0** |
 
 ## Agent-specific considerations
 
@@ -126,16 +128,16 @@ or key provider the operator plugs in; sibling packages not listed above.
 | ID | Package | Finding | Proposed resolution |
 |---|---|---|---|
 | THR-AGENT-013 | agent-contracts | Request-host fallback for channels without a hostname | Document as a hard requirement, or refuse to build URLs without a hostname unless `trust_request_host` is on |
-| THR-AGENT-014 | mcp-oauth | `allowed_redirect_uris` is accepted as configuration but not enforced: any HTTPS host and any private-use scheme is accepted at registration | Enforce the allow-list at registration, or correct the README so it does not promise the restriction |
-| THR-AGENT-020 | mcp-oauth | `access_token_ttl` (default 3600 s) is accepted but not used; tokens issued through the OAuth flow live 90 days, CLI tokens never expire unless `--ttl-days` is given | Wire the setting into token issuance, or remove it and document the real lifetime |
-| THR-AGENT-021 | mcp-oauth | The consent template `mcp/oauth/authorize.html.twig` is not shipped; the host application must provide it | Ship a default template or document the requirement |
+| THR-AGENT-014 | mcp-oauth | `allowed_redirect_uris` is accepted as configuration but not enforced: any HTTPS host and any private-use scheme is accepted at registration | **Mitigated in v2.0.0:** allow-list enforced at registration and at `/authorize`; empty list allows nothing |
+| THR-AGENT-020 | mcp-oauth | `access_token_ttl` (default 3600 s) is accepted but not used; tokens issued through the OAuth flow live 90 days, CLI tokens never expire unless `--ttl-days` is given | **Mitigated in v2.0.0:** OAuth tokens honour `access_token_ttl`; CLI tokens default to 90 days, `--no-expiry` is an explicit opt-in. Residual: tokens minted by 1.x keep their stored expiry — operators review `expires_at IS NULL` rows (README, "Upgrading to 2.0") |
+| THR-AGENT-021 | mcp-oauth | The consent template `mcp/oauth/authorize.html.twig` is not shipped; the host application must provide it | **Mitigated in v2.0.0:** template shipped as `@KohSyliusMcpOAuth/oauth/authorize.html.twig`, English and German catalogues |
 
 ## Document control
 
 | Field | Value |
 |---|---|
 | Owner | Kai Ole Hartwig |
-| Version | 0.1 |
+| Version | 0.2 |
 | Last review | 2026-09-28 |
 | Next review | before the next MAJOR release of any package in scope, or when a trust boundary is added |
 | Report a gap | see [SECURITY.md](../SECURITY.md) |
