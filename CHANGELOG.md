@@ -1,3 +1,15 @@
+## [1.1.10](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.9...v1.1.10) (2026-09-28)
+
+### :memo: Documentation
+
+* add the family threat model and complete the README ([c9cc354](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/c9cc354dbc5caf73f8e4680df3b84eb3121a0f81))
+* point project metadata and contribution paths at GitHub ([24e4987](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/24e498701924454aaecb723c851d05ae9dcee632))
+
+### :repeat: Chores
+
+* **reuse:** cover the template-synced .mise.toml and signing key ([b7593bb](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/b7593bb8a4eeec0f289d88a97dffbc98eb3a33bd))
+* **license:** name the copyright holder with a contact address ([13a37d1](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/13a37d1d5386d9813f20dad8c1b4bcec8b280790))
+
 ## [1.1.9](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.8...v1.1.9) (2026-09-26)
 
 ### :bug: Fixes
