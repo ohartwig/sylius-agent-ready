@@ -1,3 +1,13 @@
+## [1.1.14](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.13...v1.1.14) (2026-09-28)
+
+### :repeat: Continuous Integrations
+
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.3 ([67891df](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/67891dfacada0f702fdd3a9280e42f7c95146d92))
+
+### :repeat: Chores
+
+* **repo-templates:** sync ([b475c15](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/b475c155cc842d8e647c3299783551e6ca89328b))
+
 ## [1.1.13](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.12...v1.1.13) (2026-09-28)
 
 ### :repeat: Chores
