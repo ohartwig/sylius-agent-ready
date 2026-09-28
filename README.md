@@ -5,7 +5,11 @@ SPDX-License-Identifier: MIT
 
 # koh/sylius-agent-ready
 
-Metapackage. Pulls in the full agent-readiness surface for a Sylius shop.
+Metapackage. Pulls in the full agent-readiness surface for a Sylius shop:
+discovery documents, `llms.txt`, agent authentication and the agentic commerce
+protocols, each as its own independently installable package.
+
+## Install
 
 ```bash
 composer require koh/sylius-agent-ready
@@ -33,7 +37,7 @@ composer require koh/sylius-agent-ready
 Suggested, not required: `koh/sylius-mcp` (MCP tools and server card),
 `koh/sylius-webmcp` (in-browser agents), `koh/sylius-ucp` (UCP profile).
 
-## Installing is not enough
+## Configure — installing is not enough
 
 A metapackage cannot register bundles or import routes. Three things stay
 manual, and the shop is not agent-ready until all three are done.
@@ -93,6 +97,24 @@ agents are pointed at a 404 while every document looks correct.
 
 It also flags any discovery response that sets a cookie, which means the
 firewall exemption is missing.
+
+## Decommission
+
+Decommission the member packages first — several hold state that outlives the
+code: revoke outstanding MCP access tokens before removing
+`koh/sylius-mcp-oauth`, revoke the Web Bot Auth seed after removing
+`koh/sylius-web-bot-auth`, and switch x402 off before removing it. Each
+package's README has its own section. Then remove the `composer require`, the
+bundle entries, `config/routes/koh_agent.yaml` and the `koh_agent_public`
+firewall. Restore a static `public/robots.txt` if you want one.
+
+## Security
+
+Report vulnerabilities privately — see [SECURITY.md](SECURITY.md). Advisories
+are published as CSAF 2.0 at <https://ole-hartwig.eu/.well-known/csaf/>.
+
+The threat model for the whole package family is in
+[docs/threat-model.md](docs/threat-model.md).
 
 ## Licence
 
