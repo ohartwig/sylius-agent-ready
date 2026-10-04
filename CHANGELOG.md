@@ -1,3 +1,20 @@
+## [1.1.15](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.14...v1.1.15) (2026-10-04)
+
+### :repeat: Continuous Integrations
+
+* follow composed-default-pipelines on the rolling major tag ([0d1e678](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/0d1e678d56b9558f0d413cf8ff99ab7242242757))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.19 ([62d52be](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/62d52be1cc79a5faf18e75fe8594b9febdb50989))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.18 ([b173e81](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/b173e81a679632915db93ea4533b57e081a3ca8e))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.17 ([49e3929](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/49e3929812bd3680dede0b37a768503da2208750))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.16 ([5797e41](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/5797e415e830f3ab2b8cb1d5dbee19ee630750ac))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.12 ([cb5c9ca](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/cb5c9ca8e56b55b9d4be4bf36c426b0869b322ff))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.11 ([e9ff6e2](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/e9ff6e2dca518447ac448f3f1f63428f1d9e15d8))
+* **deps:** update dependency devops/ci-cd-components/composed-default-pipelines to v2.21.9 ([1e683ce](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/1e683ce2b84df8b76c7fe59270f51895d5d9f3ed))
+
+### :repeat: Chores
+
+* **repo-templates:** sync ([6749440](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/674944052b829cc2dc9b2ccdf0b385f3341577dc))
+
 ## [1.1.14](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.13...v1.1.14) (2026-09-28)
 
 ### :repeat: Continuous Integrations
