@@ -1,3 +1,9 @@
+## [1.1.17](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.16...v1.1.17) (2026-10-13)
+
+### :repeat: Chores
+
+* publish to GitHub and Packagist ([7d89e45](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/7d89e452cc29d1a01aac5e3e20923a26250b7387))
+
 ## [1.1.16](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.15...v1.1.16) (2026-10-08)
 
 ### :bug: Fixes
