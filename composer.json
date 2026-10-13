@@ -25,7 +25,8 @@
     "homepage": "https://github.com/ohartwig/sylius-agent-ready",
     "support": {
         "issues": "https://github.com/ohartwig/sylius-agent-ready/issues",
-        "source": "https://github.com/ohartwig/sylius-agent-ready"
+        "source": "https://github.com/ohartwig/sylius-agent-ready",
+        "security": "https://github.com/ohartwig/sylius-agent-ready/blob/main/SECURITY.md"
     },
     "require": {
         "php": "^8.5.11",
