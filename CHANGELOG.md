@@ -1,3 +1,9 @@
+## [1.1.20](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.19...v1.1.20) (2026-10-18)
+
+### :bug: Fixes
+
+* admit PHP 8.3 and test the floor on it ([ce6e9cf](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/ce6e9cfd786a24697eec3b26a6bb8b4ba23b24cb))
+
 ## [1.1.19](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.18...v1.1.19) (2026-10-16)
 
 ### :repeat: Chores
