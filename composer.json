@@ -29,7 +29,7 @@
         "security": "https://github.com/ohartwig/sylius-agent-ready/blob/main/SECURITY.md"
     },
     "require": {
-        "php": "^8.5.11",
+        "php": "^8.3",
         "koh/sylius-a2a": "^1.0",
         "koh/sylius-acp": "^1.0",
         "koh/sylius-agent-contracts": "^1.1",
@@ -38,7 +38,7 @@
         "koh/sylius-auth-md": "^1.0",
         "koh/sylius-llms-txt": "^1.0",
         "koh/sylius-markdown": "^1.0",
-        "koh/sylius-mcp-oauth": "^1.0",
+        "koh/sylius-mcp-oauth": "^3.0",
         "koh/sylius-mpp": "^1.0",
         "koh/sylius-robots-txt": "^1.0",
         "koh/sylius-web-bot-auth": "^1.0",
