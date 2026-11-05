@@ -30,7 +30,7 @@ composer require koh/sylius-agent-ready
 | `koh/sylius-mcp-oauth` | the OAuth 2.1 server and its RFC 8414 / 9728 metadata |
 | `koh/sylius-auth-md` | `/auth.md` |
 | `koh/sylius-web-bot-auth` | `/.well-known/http-message-signatures-directory` |
-| `koh/sylius-acp` | `/.well-known/acp.json` and the agent product feed |
+| `koh/sylius-acp` | `/.well-known/acp.json`, ACP carts, ACP feed publication and the catalogue search endpoint |
 | `koh/sylius-mpp` | `/openapi.json` with `x-payment-info` |
 | `koh/sylius-x402` | HTTP 402 payment middleware (off by default) |
 
