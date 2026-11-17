@@ -1,3 +1,14 @@
+## [1.1.21](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.20...v1.1.21) (2026-11-17)
+
+### :bug: Fixes
+
+* **composer:** point homepage at the package page ([b70579c](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/b70579c2673b864bdd7a64c3300ab289e50ca8b0))
+
+### :memo: Documentation
+
+* **readme:** list ACP carts, feed publication and catalogue search for sylius-acp ([541fbde](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/541fbde1de4f5ba145b7dbf609794ada2e6bec48))
+* **threat-model:** record the mcp-oauth 2.0.0 mitigations ([7e4214e](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/7e4214e2513b131a59fa68a217b9ccc7ceb5ee7b))
+
 ## [1.1.20](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.19...v1.1.20) (2026-10-18)
 
 ### :bug: Fixes
