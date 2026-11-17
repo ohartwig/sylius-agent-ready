@@ -1,3 +1,9 @@
+## [1.1.22](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.21...v1.1.22) (2026-11-17)
+
+### :bug: Fixes
+
+* **deps:** update dependency stefandoorn/sitemap-plugin to ^3.1.0 ([f3ec984](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/commit/f3ec98417046d5fe978ee7d94ff6c1511d48646d))
+
 ## [1.1.21](https://git.ole-hartwig.eu/ai-ready-platform/platform/sylius-agent-ready/compare/v1.1.20...v1.1.21) (2026-11-17)
 
 ### :bug: Fixes
